@@ -1,0 +1,36 @@
+<style>
+  nav {
+    background: #4a5568;
+    padding: 1rem 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 0;
+    align-items: center;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.2s ease;
+    font-weight: 400;
+    font-size: 0.95rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  nav a:first-child {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+</style>
+
+<nav>
+    <a routerLink="/user-profile">Home</a>
+    <a routerLink="/data-binding">Data Binding</a>
+    <a routerLink="/directives">Directives</a>
+</nav>
+
+<router-outlet />

@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>{{ message }}</h1>
+
+  <img [src]="imageUrl" [width]="w" [height]="h">
+
+  <p [style.color]="textColor">This is a blue text!</p>
+
+  <p [class.highlighted]="isHighlighted">This text is highlighted!</p>
+
+  <input [(ngModel)]="yourName" placeholder="Enter your name">
+  <p>Hello, {{ yourName }}!</p>
+
+  <div class="button-container">
+    <button (click)="increment()">Increment</button>
+    <button (click)="decrement()">Decrement</button>
+  </div>
+
+  <p class="count-display">Count: {{ count }}</p>
+</div>
